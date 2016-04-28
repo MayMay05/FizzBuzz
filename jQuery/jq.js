@@ -1,12 +1,14 @@
 $(document).ready(function() {
+	
 	$('.fb-button').click(function () {
+		
 		var input = parseInt($('.fb-input').val());
 
 		if (isNaN(input)) {
 			alert('Please enter a number!');
 		} else {
 
-			$('fb-list').remove();
+			$('.fb-list').remove();
 			fizzbuzz(input);
 		}
 
@@ -15,19 +17,20 @@ $(document).ready(function() {
 });
 
 function fizzbuzz(length) {
+	
 	for (var i = 1; i <= length; i++) {
 
 		if (i % 3 !==0 && i % 5 !== 0) {
-			$('fb-list').append('<li>' + i + '</li>');
+			$('.fb-list').append('<li>' + i + '</li>');
 		}
 		if (i % 3 === 0) {
-			$('fb-list').append('<li>fizz</li>');
+			$('.fb-list').append('<li>fizz</li>');
 		}
 		if (i % 5 === 0) {
-			$('fb-list').append('<li>buzz</li>');
+			$('.fb-list').append('<li>buzz</li>');
 		}
 		if (i % 3 === 0 && i % 5 === 0) {
-			$('fb-list').append('<li>fizzbuzz</li>');
+			$('.fb-list').append('<li>fizzbuzz</li>');
 		}
 
 	}
