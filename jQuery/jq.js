@@ -20,7 +20,7 @@ function fizzbuzz(length) {
 	
 	for (var i = 1; i <= length; i++) {
 
-		if (i % 3 !==0 && i % 5 !== 0) {
+		if (i % 3 !== 0 && i % 5 !== 0) {
 			$('.fb-list').append('<li>' + i + '</li>');
 		}
 		if (i % 3 === 0) {
