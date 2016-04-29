@@ -8,7 +8,7 @@ $(document).ready(function() {
 			alert('Please enter a number!');
 		} else {
 
-			$('.fb-list').remove();
+			$('.fb-list li').remove();
 			fizzbuzz(input);
 		}
 
@@ -32,6 +32,6 @@ function fizzbuzz(length) {
 		if (i % 3 === 0 && i % 5 === 0) {
 			$('.fb-list').append('<li>fizzbuzz</li>');
 		}
-
+		
 	}
-}
+}		
