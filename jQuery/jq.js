@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	var open = prompt("Enter a number");
+
 	$('.fb-button').click(function () {
 		
 		var input = parseInt($('.fb-input').val());
